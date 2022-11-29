@@ -13,11 +13,19 @@ import java.util.Optional;
 public class SportsService {
 
     private final HttpService<List<Sport>> httpService = new HttpService<>();
-    private final static String api = "https://api.the-odds-api.com/v4/sports/?apiKey=";
+    private final static String api = "https://api.the-odds-api.com/v4/sports/";
     private final String apiKey;
 
     public Optional<List<Sport>> getSports() throws IOException, InterruptedException {
-        return Optional.of(httpService.makeRequest(URI.create(api + apiKey), new TypeReference<>() {
+        return Optional.of(httpService.makeRequest(URI.create(buildRequestUrl()), new TypeReference<>() {
         }));
+    }
+
+    private String buildRequestUrl() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(api);
+        sb.append("?apiKey=");
+        sb.append(apiKey);
+        return sb.toString();
     }
 }
