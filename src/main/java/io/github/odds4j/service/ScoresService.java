@@ -9,12 +9,13 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
-@RequiredArgsConstructor
-public class ScoresService {
+public class ScoresService extends Service {
 
     private final HttpService<List<Match>> httpService = new HttpService<>();
-    private final static String api = "https://api.the-odds-api.com/v4/sports/";
-    private final String apiKey;
+
+    public ScoresService(String apiKey) {
+        super(apiKey);
+    }
 
     public Optional<List<Match>> getScores(String sport, Optional<Integer> daysFrom) throws IOException, InterruptedException {
         return Optional.of(httpService.makeRequest(URI.create(buildRequestUrl(sport, daysFrom)), new TypeReference<>(){}));
@@ -22,7 +23,7 @@ public class ScoresService {
 
     private String buildRequestUrl(String sport, Optional<Integer> daysFrom) {
         StringBuilder sb = new StringBuilder();
-        sb.append(api);
+        sb.append(getApi());
         sb.append(sport);
         sb.append("/scores/");
         if (daysFrom.isPresent()) {
@@ -33,7 +34,7 @@ public class ScoresService {
             sb.append("?");
         }
         sb.append("apiKey=");
-        sb.append(apiKey);
+        sb.append(getApiKey());
         return sb.toString();
     }
 }
