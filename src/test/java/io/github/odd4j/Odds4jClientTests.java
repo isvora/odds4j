@@ -9,7 +9,7 @@ import uk.org.webcompere.lightweightconfig.ConfigLoader;
 class Odds4jClientTests {
 
     private Odds4jClient odds4jClient;
-    Config configuration =
+    private final Config configuration =
             ConfigLoader.loadYmlConfigFromResource("config.yml", Config.class);
 
     @BeforeEach
