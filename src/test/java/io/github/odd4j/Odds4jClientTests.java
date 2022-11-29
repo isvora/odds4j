@@ -8,6 +8,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import uk.org.webcompere.lightweightconfig.ConfigLoader;
 
+import java.util.Optional;
+
 class Odds4jClientTests {
 
     private Odds4jClient odds4jClient;
@@ -46,5 +48,24 @@ class Odds4jClientTests {
         var response = odds4jClient.getOdds(sport, region, markets);
 
         Assertions.assertTrue(response.isEmpty());
+    }
+
+    @Test
+    void testGetScores() {
+        String sport = "basketball_nba";
+        Optional<Integer> daysFrom = Optional.of(1);
+
+        var response = odds4jClient.getScores(sport, daysFrom);
+
+        Assertions.assertFalse(response.isEmpty());
+    }
+
+    @Test
+    void testGetScoresWithoutDaysFrom() {
+        String sport = "basketball_nba";
+
+        var response = odds4jClient.getScores(sport, Optional.empty());
+
+        Assertions.assertFalse(response.isEmpty());
     }
 }
