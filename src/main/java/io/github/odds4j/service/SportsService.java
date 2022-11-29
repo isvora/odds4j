@@ -1,7 +1,7 @@
 package io.github.odds4j.service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import io.github.odds4j.model.Sport;
+import io.github.odds4j.model.sports.Sport;
 import lombok.RequiredArgsConstructor;
 
 import java.io.IOException;

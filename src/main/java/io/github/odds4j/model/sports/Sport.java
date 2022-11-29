@@ -1,4 +1,4 @@
-package io.github.odds4j.model;
+package io.github.odds4j.model.sports;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

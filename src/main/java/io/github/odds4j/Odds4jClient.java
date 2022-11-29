@@ -1,7 +1,9 @@
 package io.github.odds4j;
 
-import io.github.odds4j.model.Sport;
+import io.github.odds4j.model.odds.Odds;
+import io.github.odds4j.model.sports.Sport;
 import io.github.odds4j.service.Odds4jService;
+import io.github.odds4j.service.OddsService;
 import io.github.odds4j.service.SportsService;
 import lombok.Getter;
 
@@ -17,12 +19,23 @@ public class Odds4jClient {
 
     public Odds4jClient(String apiKey) {
         this.apiKey = apiKey;
-        this.odds4jService = new Odds4jService(new SportsService(apiKey));
+        this.odds4jService = new Odds4jService(
+                new SportsService(apiKey),
+                new OddsService(apiKey)
+        );
     }
 
     public List<Sport> getSports() {
         try {
             return odds4jService.getSports().orElse(Collections.emptyList());
+        } catch (IOException | InterruptedException e) {
+            return Collections.emptyList();
+        }
+    }
+
+    public List<Odds> getOdds(String sport, String regions, String markets) {
+        try {
+            return odds4jService.getOdds(sport, regions, markets).orElse(Collections.emptyList());
         } catch (IOException | InterruptedException e) {
             return Collections.emptyList();
         }
