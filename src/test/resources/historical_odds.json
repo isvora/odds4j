@@ -1,0 +1,270 @@
+{
+  "timestamp": "2021-10-18T11:55:00Z",
+  "previous_timestamp": "2021-10-18T11:45:00Z",
+  "next_timestamp": "2021-10-18T12:05:00Z",
+  "data": [
+    {
+      "id": "4edd5ce090a3ec6192053b10d27b87b0",
+      "sport_key": "americanfootball_nfl",
+      "sport_title": "NFL",
+      "commence_time": "2021-10-19T00:15:00Z",
+      "home_team": "Tennessee Titans",
+      "away_team": "Buffalo Bills",
+      "bookmakers": [
+        {
+          "key": "draftkings",
+          "title": "DraftKings",
+          "last_update": "2021-10-18T11:48:09Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -294
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 230
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "twinspires",
+          "title": "TwinSpires",
+          "last_update": "2021-10-18T11:48:00Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -278
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "betfair",
+          "title": "Betfair",
+          "last_update": "2021-10-18T11:48:25Z",
+          "markets": [
+            {
+              "key": "h2h_lay",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -233
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 240
+                }
+              ]
+            },
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -238
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 230
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "sugarhouse",
+          "title": "SugarHouse",
+          "last_update": "2021-10-18T11:48:27Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -263
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 228
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "betrivers",
+          "title": "BetRivers",
+          "last_update": "2021-10-18T11:45:46Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -263
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 228
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "barstool",
+          "title": "Barstool Sportsbook",
+          "last_update": "2021-10-18T11:48:21Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -278
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "fanduel",
+          "title": "FanDuel",
+          "last_update": "2021-10-18T11:47:58Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -270
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "betmgm",
+          "title": "BetMGM",
+          "last_update": "2021-10-18T11:44:23Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -250
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 210
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "unibet",
+          "title": "Unibet",
+          "last_update": "2021-10-18T11:49:57Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -263
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 225
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "williamhill_us",
+          "title": "William Hill (US)",
+          "last_update": "2021-10-18T11:48:21Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -270
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "betonlineag",
+          "title": "BetOnline.ag",
+          "last_update": "2021-10-18T11:48:28Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -256
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 215
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "pointsbetus",
+          "title": "PointsBet (US)",
+          "last_update": "2021-10-18T11:48:46Z",
+          "markets": [
+            {
+              "key": "h2h",
+              "outcomes": [
+                {
+                  "name": "Buffalo Bills",
+                  "price": -263
+                },
+                {
+                  "name": "Tennessee Titans",
+                  "price": 210
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,10 @@
 package io.github.odds4j;
 
+import io.github.odds4j.model.historical.odds.HistoricalOdds;
 import io.github.odds4j.model.odds.Odds;
 import io.github.odds4j.model.scores.Match;
 import io.github.odds4j.model.sports.Sport;
-import io.github.odds4j.service.Odds4jService;
-import io.github.odds4j.service.OddsService;
-import io.github.odds4j.service.ScoresService;
-import io.github.odds4j.service.SportsService;
+import io.github.odds4j.service.*;
 import lombok.Getter;
 
 import java.io.IOException;
@@ -25,8 +23,14 @@ public class Odds4jClient {
         this.odds4jService = new Odds4jService(
                 new SportsService(apiKey),
                 new OddsService(apiKey),
-                new ScoresService(apiKey)
+                new ScoresService(apiKey),
+                new HistoricalOddsService(apiKey)
         );
+    }
+
+    public Odds4jClient(String apiKey, Odds4jService odds4jService) {
+        this.apiKey = apiKey;
+        this.odds4jService = odds4jService;
     }
 
     public List<Sport> getSports() {
@@ -50,6 +54,14 @@ public class Odds4jClient {
             return odds4jService.getScores(sport, daysFrom).orElse(Collections.emptyList());
         } catch (IOException | InterruptedException e) {
             return Collections.emptyList();
+        }
+    }
+
+    public Optional<HistoricalOdds> getHistoricalOdds(String sport, String regions, String markets) {
+        try {
+            return odds4jService.getHistoricalOdds(sport, regions, markets);
+        } catch (IOException | InterruptedException e) {
+            return Optional.empty();
         }
     }
 
