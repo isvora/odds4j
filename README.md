@@ -11,6 +11,7 @@ First thing we need is to create an instance of `Odds4jClient`
 
 ```java
 import io.github.odds4j.*;
+
 public class Main {
     
     public static void main(String... args) {
