@@ -28,6 +28,10 @@ public class Odds4jClient {
         }
     }
 
+    public static Odds4jClientBuilder builder() {
+        return new Odds4jClientBuilder();
+    }
+
     public static class Odds4jClientBuilder {
 
         private String apiKey;

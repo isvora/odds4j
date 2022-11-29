@@ -14,7 +14,7 @@ class Odds4jClientTests {
 
     @BeforeEach
     void init() {
-        odds4jClient = new Odds4jClient(configuration.getApiKey());
+        odds4jClient = Odds4jClient.builder().apiKey(configuration.getApiKey()).build();
     }
 
     @Test
