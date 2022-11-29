@@ -28,7 +28,6 @@ Replace `YOUR_API_KEY` with your actual api key that is provided by the-odds-api
 From there, we can use the `odds4jClient` object to query the-odds-api database.
 
 ```java
-import io.github.odds4j.*;
 import io.github.odds4j.model.historical.odds.HistoricalOdds;
 import io.github.odds4j.model.odds.Odds;
 import io.github.odds4j.model.scores.Score;
