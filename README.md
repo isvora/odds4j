@@ -10,16 +10,16 @@ You can get your api key from [here](https://the-odds-api.com/#get-access).
 First thing we need is to create an instance of `Odds4jClient`
 
 ```java
-import io.github.odds4j.*;
+import io.github.odds4j.Odds4jClient;
 
 public class Main {
-    
+
     public static void main(String... args) {
         Odds4jClient odds4jClient = Odds4jClient.builder()
                 .apiKey("YOUR_API_KEY")
                 .build();
     }
-    
+
 }
 ```
 
